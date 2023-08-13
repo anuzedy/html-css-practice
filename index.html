@@ -7,10 +7,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
   <title>NAVER</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      text-align: center;
+    }
+
+    #wrap-center {
+      width: 1280px;
+      display: inline-block;
+      background-color: yellow;
+    }
+
+    #header {
+      text-align: left;
+    }
+
+    #header-hamburger {
+      display: inline-block;
+      padding: 10px;
+      margin-top: 18px;
+    }
+
+    #header-hamburger>div {
+      background-image: url(./sp_main.png);
+      /* background-image는 기본적으로 무한히 반복해서 연결됨
+          그 현상을 막으려면 background-repeat를 no-repeat로 설정
+       */
+      background-repeat: no-repeat;
+      background-size: 434px 422px;
+      background-position: -364px 0px;
+      width: 26px;
+      height: 26px;
+    }
+
+    #main {
+      height: 2000px;
+    }
+  </style>
 </head>
 
 <body>
-  <div>안녕하세요</div>
+  <div id="wrap">
+    <div id="wrap-center">
+      <div id="header">
+        <div id="header-hamburger">
+          <div></div>
+        </div>
+      </div>
+      <div id="search"></div>
+      <div id="nav"></div>
+      <div id="main"></div>
+    </div>
+  </div>
 </body>
 
 </html>
